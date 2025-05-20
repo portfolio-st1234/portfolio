@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="description" content="ページの説明120文字以内で記載" />
+
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <title> Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-pc">
+        <div class="header__inner">
+          <h1 id="logo">
+            <a href="index.html" class="logo__link">
+                <!-- <span class="logo__S"></span> -->
+                  <span class="logo__text-L">PORTFOLIO</span>
+            </a>
+          </h1>
+          <nav>
+            <ul class="header__nav">
+              <li class="home"><a href="index.html">HOME</a></li>
+              <li class="about"><a href="about.html">ABOUT</a></li>
+              <li class="works"><a href="works.html">WORKS</a></li>
+              <li class="contact"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        </div>
+        <!-- /.header__inner -->
+      </div>
+      <!-- /.header__sp -->
+
+      <div class="header-mb">
+        <div class="header__inner">
+          <h1 id="logo">
+            <a href="index.html" class="logo__link">
+              <span class="logo__S">S</span>
+              <div class="logo__text-layout">
+                <span class="logo__text-L"></span>
+                <span class="logo__text-S">Web Design Portfolio</span>
+              </div>
+            </a>
+          </h1>
+
+          <input id="menu" type="checkbox" />
+          <label for="menu" class="open">
+            <div class="hamburger-block">
+              <span id="span01"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+          <label for="menu" class="black"></label>
+
+          <aside>
+            <label for="menu" class="close"></label>
+            <nav>
+              <ul class="Sp-navi__list-menu">
+                <li class="Sp-navi__list-menu-item">
+                  <a href="index.html">
+                    <p class="Sp-navi__list-item-item-en">Home</p>
+                    <p class="Sp-navi__list-item-item-jp">ホーム</p>
+                  </a>
+                </li>
+                <li class="Sp-navi__list-menu-item">
+                  <a href="about.html">
+                    <p class="Sp-navi__list-item-item-en">About</p>
+                    <p class="Sp-navi__list-item-item-jp">アバウト</p>
+                  </a>
+                </li>
+                <li class="Sp-navi__list-menu-item">
+                  <a href="contact.html">
+                    <p class="Sp-navi__list-item-item-en">Contact</p>
+                    <p class="Sp-navi__list-item-item-jp">コンタクト</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+        <!-- /.header__inner -->
+      </div>
+      <!-- /.header-mb -->
+    </header>
+
+    <div class="headline">
+      <h2 class="headline__en">Contact</h2>
+      <p class="headline__jp">コンタクト</p>
+    </div>
+
+    <article class="about__article">
+      <p class="about__text">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。 下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
+    </article>
+
+    <form action="#" method="post" class="contact__mail-form" novalidate="novalidate">
+      <dl class="contactForm">
+        <dt>お名前<span class="required">必須</span></dt>
+        <dd class="w01">
+          <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="80" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+        </dd>
+        <dt>メールアドレス<span class="required">必須</span></dt>
+        <dd class="w01">
+          <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="80" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
+        </dd>
+        <dt>電話番号</dt>
+        <dd class="w01">
+          <span class="wpcf7-form-control-wrap your-tel"><input type="tel" name="your-tel" value="" size="80" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" /></span>
+        </dd>
+        <dt>お問い合わせ内容<span class="required">必須</span></dt>
+        <dd class="w02">
+          <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="80" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea></span>
+        </dd>
+      </dl>
+      <div class="wpcf7-form-control-wrap">
+        <div data-sitekey="6Let6GAUAAAAALgf36ff7P-4wUN_unD2fQxkQukv" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha">
+          <div style="width: 304px; height: 78px">
+            <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-mcb4l7espkz6" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Let6GAUAAAAALgf36ff7P-4wUN_unD2fQxkQukv&amp;co=aHR0cHM6Ly91LWQtbC5qcDo0NDM.&amp;hl=ja&amp;v=joHA60MeME-PNviL59xVH9zs&amp;size=normal&amp;cb=3wej4mkjoya4"></iframe></div>
+            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none"></textarea>
+          </div>
+          <iframe style="display: none"></iframe>
+        </div>
+        <noscript>
+          <div style="width: 302px; height: 422px">
+            <div style="width: 302px; height: 422px; position: relative">
+              <div style="width: 302px; height: 422px; position: absolute">
+                <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Let6GAUAAAAALgf36ff7P-4wUN_unD2fQxkQukv" frameborder="0" scrolling="no" style="width: 302px; height: 422px; border-style: none"> </iframe>
+              </div>
+              <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px">
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none"> </textarea>
+              </div>
+            </div>
+          </div>
+        </noscript>
+      </div>
+      <p><input type="submit" value="内容を送信する" class="wpcf7-form-control submitBtn" /></p>
+      <div class="wpcf7-response-output wpcf7-display-none"></div>
+    </form>
+
+<footer>
+
+  <div class="footer__layout-top">
+    <div class="footer__inner">
+      <ul class="footer__nav">
+        <li class="home"><a href="index.html">HOME</a></li>
+        <li class="about"><a href="about.html">ABOUT</a></li>
+        <li class="works"><a href="works.html">WORKS</a></li>
+        <li class="contact"><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <a href="#" class="circle_btn05"><span class="text"></span></a>
+    </div>
+  </div>
+
+  <div class="footer__layout-middle">
+    <div class="footer__inner">
+      <ul class="footer__list-sns">
+        <li class="sns-x"><a href="#"><img src="./img/sns_x.png" alt="X"></a></li>
+        <li class="sns-facebook"><a href="#"><img src="./img/sns_facebook.png" alt="X"></a></li>
+        <li class="sns-instagram"><a href="#"><img src="./img/sns_insta.png" alt="X"></a></li>
+        <li class="sns-line"><a href="#"><img src="./img/sns_line.png" alt="X"></a></li>
+      </ul>
+        <a href="index.html" class="logo__link">
+        <!-- <span class="logo__S"></span> -->
+        <span class="logo__text-L">PORTFOLIO</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__layout-bottom">
+    <div class="footer__inner">
+      <p class="copyright"></p>
+  </div>
+</div>
+
+  </div>
+</footer>
+<script src="./js/splide.min.js"></script>
+<script src="./js/splide-setting.js"></script>
+  </body>
+</html>
