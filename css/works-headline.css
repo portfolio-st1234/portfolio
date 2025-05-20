@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+
+
+
+/* works__headline
+------------------------------------------------ */
+
+.works__headline{
+    max-width:920px;
+    padding:0 6%;
+    margin:0 auto 30px;
+}
+.works__headline__jp-S{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom:16px;
+}
+.works__headline__jp-L{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom:14px;
+}
+.works__headline__en{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 599px) {
+    .works__headline{
+        padding:0 30px;
+        margin:0 auto 30px;
+    }
+    .works__headline__jp-S{
+        font-size: 12px;
+        margin-bottom:12px;
+    }
+    .works__headline__jp-L{
+        font-size: 18px;
+        margin-bottom:10px;
+    }
+    .works__headline__en{
+        font-size: 11px;
+    }
+}
+
+/* headline
+------------------------------------------------ */
+
+.headline{
+    max-width:920px;
+    padding:0 6%;
+    margin:0 auto 40px;
+    text-align:center;    
+}
+
+.headline__en{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+.headline__jp{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    /* font-style: normal; */
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    /* .headline{
+        margin-bottom: 40px;
+    } */
+    .headline__en{
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .headline__jp{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .headline{
+        margin-bottom: 35px;
+    }
+    .headline__en{
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .headline__jp{
+        font-size: 12px;
+    }
+}
+
+

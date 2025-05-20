@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+/* about__article
+------------------------------------------------ */
+.about__article{
+    width:80%;
+    max-width:760px;
+    margin:0 auto 60px;
+    padding:0 6%;
+
+}
+
+.about__text{
+    font-size: 15px;
+    line-height: 2.0;
+    margin-bottom: 24px;
+}
+.about__text-bold{
+    display: block;
+    /* font-weight: 500; */
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 599px) {
+    .about__article{
+        width:100%;
+        margin:0 auto 60px;
+        padding:0 20px;
+    }
+    .about__text{
+        width:100%;
+        padding:0 20px;
+        margin-bottom: 20px;
+    }
+    .about__text-bold{
+        text-align: center;
+    }
+}

@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+
+.list-works{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+    max-width:920px;
+    padding:0 6%;
+    margin:0 auto;
+}
+.list-works__item{
+    width:47%;
+    margin-bottom:50px;
+}
+
+
+.list-works__item-frame{
+width:100%;
+overflow:hidden;
+}
+
+.list-wroks__img{
+    width:100%;
+    aspect-ratio: 3/2;
+    margin-bottom:20px;
+    transition: all 0.4s ease 0s;
+}
+
+a .list-wroks__img:hover{
+    animation: zoomOut 0.5s both ;
+    }
+
+@keyframes zoomOut {
+    0% { transform: scale(0.94); opacity:0;}
+    100% { transform: scale(1.0); opacity:1;}
+} 
+
+/* wow 登場アニメーション リストのアイテムに設定(使わない場合は消す)
+---------------------------------------- */
+.hide{
+    opacity:0;
+}    
+
+.zoomOut{
+    animation: zoomIn 0.5s both;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.94); opacity:0;}
+    100% { transform: scale(1.0); opacity:1;}
+} 
+
+/* /登場アニメーション リストのアイテムに設定 
+---------------------------------------- */
+
+
+.list-wroks__txt-jp{
+    font-size: 15px;
+    margin-bottom:10px;
+}
+.list-wroks__txt-en{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:#bbbbbb;
+}
+
+.list-works__item .zoomOut:hover{
+    text-decoration: underline;
+}
+
+/* MB */
+@media only screen and (max-width: 599px) {
+
+    .list-works{
+        flex-direction:column;
+        padding:0 20px;
+        margin:0 auto;
+        width:80%;
+    }
+    .list-works__item{
+        width:100%;
+        margin-bottom:50px;
+    }
+}
+

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* headline
+------------------------------------------------ */
+
+.headline{
+    max-width:920px;
+    padding:0 6%;
+    margin:0 auto 40px;
+    text-align:center;    
+}
+
+.headline__en{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+.headline__jp{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    /* font-style: normal; */
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    /* .headline{
+        margin-bottom: 40px;
+    } */
+    .headline__en{
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .headline__jp{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .headline{
+        margin-bottom: 35px;
+    }
+    .headline__en{
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .headline__jp{
+        font-size: 12px;
+    }
+}
+
+

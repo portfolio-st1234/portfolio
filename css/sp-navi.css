@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.fa-brands {
+  color: #ffffff;
+  font-size: 24px;
+}
+.open,
+.close {
+  display: none;
+}
+input[type="checkbox"] {
+  position: absolute;
+  right: -50vw;
+}
+aside {
+  display: none;
+}
+
+/* ********************************************
+ * Media queryの設定
+* ********************************************/
+
+@media screen and (max-width: 599px) {
+ /* headerを画面の最上部に固定 */
+  .Header-sp{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+  }
+  .open,
+  .close {
+    display: block;
+  }
+  .open {
+    position: absolute;
+    right: 0;
+    top:0; /*画面上部に固定*/
+  }
+  aside {
+    display: block;
+    width: 300px;
+    position: absolute;
+    right: -300px; /*ここの値とwidthの値を同じに設定するpxでも*/
+    height: 100vh;
+    color: #fff;
+    background-color: #997A5C;
+    padding: 10px;
+    transition: all 0.2s ease-in;
+  }
+  .Sp-navi__list-menu {
+    margin-top: 50px;
+  }
+
+  .Sp-navi__list-menu {
+    margin-top: 60px;
+  }
+  .Sp-navi__list-menu-item {
+    border-bottom: 1px dotted rgba(121, 96, 72, 1);
+    padding:24px 16px;
+  }
+  .Sp-navi__list-item-item-en {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300; /* 300,400,700*/
+    font-style: normal;
+    font-size: 38px;
+    letter-spacing: 3px;
+    /* margin-bottom: 8px; */
+  }
+  .Sp-navi__list-item-item-jp {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .list-sp__sns {
+    position: absolute;
+    bottom: 10px;
+    padding-left:16px;
+  }
+
+  .Sp-navi__list-sns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+  }
+  .Sp-navi__list-sns-item{
+    flex:1;
+  }
+
+  input[type="checkbox"]:checked ~ aside {
+    /* left: 0; */
+    right: 0;
+    z-index: 12;
+  }
+  input[type="checkbox"]:checked ~ .black {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in;
+    z-index: 11;
+  }
+}
+/* メディアクエリーここまで */
+
+
+/* ハンバーガーボタンの用のinputの初期設定*/
+#menu {
+  display: none;
+}
+/* ハンバーガーボタンのデザイン*/
+.open{
+  margin-top:4px;
+  margin-right:4px;
+  z-index: 13;
+  /* background-color:#1dc5d3; */
+ border-radius: 50px;
+  /* drop-shadow */
+filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.2));
+}
+.hamburger-block,
+.hamburger-block span {
+  display: block;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+
+.hamburger-block {
+  margin: 15px;
+  position: relative;
+  width: 25px;
+  height: 22px;
+}
+/* 
+spanタグのスタイル
+空のspanエリアを作成
+高さ２px
+背景色を白
+角を２px
+に設定
+*/
+.hamburger-block span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+/* spanタグのレイアウト */
+.hamburger-block span:nth-of-type(1) {
+  top: 0;
+}
+.hamburger-block span:nth-of-type(2) {
+  top: 10px;
+}
+.hamburger-block span:nth-of-type(3) {
+  bottom: 0;
+}
+
+/* 
+spanタグ1のレイアウト
+*/
+#menu:checked + .open > .hamburger-block > span:nth-of-type(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+/* 
+spanタグ2を透明に設定
+*/
+#menu:checked + .open > .hamburger-block > span:nth-of-type(2) {
+  opacity: 0;
+}
+/* 
+spanタグ3のレイアウト
+*/
+#menu:checked + .open > .hamburger-block > span:nth-of-type(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}

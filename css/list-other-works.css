@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+/* list-other-works
+-------------------------------------- */
+
+.list-other-works{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+    max-width:920px;
+    padding:0 6%;
+    margin:0 auto;
+}
+.list-other-works .list-works__item{
+    width:30%;
+    margin-bottom:50px;
+}
+
+.list-other-works .list-wroks__img{
+    width:100%;
+    aspect-ratio: 3/2;
+    margin-bottom:16px;
+    transition: all 0.4s ease 0s;
+}
+.list-other-works a .list-wroks__img:hover{
+    transform: scale(0.94);
+}
+.list-other-works .list-wroks__txt-jp{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom:10px;
+}
+.list-other-works .list-wroks__txt-en{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:#bbbbbb;
+}
+.list-other-works .list-works__item a:hover{
+    text-decoration: underline;
+}
+
+/* MB */
+@media only screen and (max-width: 599px) {
+
+    .list-other-works {
+        flex-direction:column;
+        padding:0 20px;
+        margin:0 auto;
+        width:70%;
+    }
+    .list-other-works .list-wroks__img{
+        margin-bottom:8px;
+    }
+    .list-other-works .list-works__item{
+        width:100%;
+        margin-bottom:40px;
+    }
+    .list-other-works .list-wroks__txt-jp{
+        margin-bottom:4px;
+    }
+}
+

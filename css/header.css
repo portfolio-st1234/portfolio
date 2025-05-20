@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+
+
+header{
+    margin-bottom:90px;
+}
+/* logo
+------------------------------------------------ */
+
+.header__inner .logo__link{
+    display: flex;
+    flex-direction:row;
+
+}
+.header__inner .logo__text-layout{
+    display: flex;
+    flex-direction:column;
+    /* align-self:flex-end; */
+}
+
+.header__inner .logo__S {
+    font-family: "League Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    display: inline-block;
+    margin-right:16px;
+  }
+  .header__inner .logo__text-L{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    display: inline-block;
+    width:130px;
+}
+.header__inner .logo__text-S{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    width:130px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    header{
+        margin-bottom:60px;
+    }
+}
+@media only screen and (max-width: 599px) {
+    header{
+        margin-bottom:40px;
+    }
+    .header__inner .logo__S {
+        font-size: 40px;
+        margin-right:10px;
+        margin-top:5px;
+      }
+      .header__inner .logo__text-L{
+
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        width:110px;
+    }
+    .header__inner .logo__text-S{
+        font-size: 9px;
+        letter-spacing: 1px;
+        width:110px;
+    }
+}
+
+
+
+
+/* nav
+------------------------------------------------ */
+
+/* nav {
+
+} */
+
+
+
+
+/* ul
+------------------------------------------------ */
+.header__nav{
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+
+
+
+
+
+/* li
+------------------------------------------------ */
+
+
+
+
+.header__inner li {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+.header__nav a:hover {
+    text-decoration: underline;
+}

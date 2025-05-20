@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+header{
+    position: fixed; /* ヘッダーを固定する */
+    top: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%; /* ヘッダーの横幅を指定する */
+    height: 80px; /* ヘッダーの高さを指定する */
+    z-index:100;
+    background: linear-gradient(rgba(183, 145, 109, 1) 0%,rgba(183, 145, 109,0.5) 60%,rgba(183, 145, 109,0) 100%);
+}
+
+.header-mb{
+    display: none;
+}
+.header-pc{
+    margin-bottom:90px;
+}
+
+.header__inner{
+    max-width:920px;
+    padding:30px 5% 10px;
+    margin:0 auto;
+    /* background-color:#F4F0EA; */
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* align-self:flex-start; */
+
+}
+@media only screen and (max-width: 767px) {
+    .header__inner{
+        padding:30px 5% 10px;
+    }
+
+}
+@media only screen and (max-width: 599px) {
+
+    .header__inner{
+        padding:0;
+        width:100%;
+    }
+    #logo{
+        padding:18px 16px;
+    }
+
+}
+/* logo
+------------------------------------------------ */
+
+.header__inner .logo__link,
+.footer__inner .logo__link{
+    display: flex;
+    flex-direction:row;
+    position:relative;
+
+}
+
+.header__inner .logo__S, 
+.footer__inner .logo__S {
+    display: inline-block;
+    position: relative;
+    width:20px;
+  }  
+  .header__inner .logo__S::before, 
+  .footer__inner .logo__S::before {
+    content: 'S';
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top:3px;
+    z-index: 10;
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color:#333;
+  }  
+  .header__inner .logo__S::after, 
+  .footer__inner .logo__S::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top:10px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+} 
+
+  .header__inner .logo__text-L,
+  .footer__inner .logo__text-L{
+    font-family: "Dongle", sans-serif;
+    font-weight: 300; /* 300,400,700*/
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    display: inline-block;
+    /* width:130px; */
+}
+
+@media only screen and (max-width: 767px) {
+    .header-pc{
+        margin-bottom:60px;
+    }
+    .header__inner .logo__text-L,
+    .footer__inner .logo__text-L{
+      letter-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 599px) {
+    .header-pc{
+        display: none;
+    }
+    .header-mb{
+        display: block;
+    }
+
+    .footer__inner .logo__text-L{
+        font-size: 24px;
+        letter-spacing: 3px;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+
+    /* #logo{
+        padding:14px 12px;
+    }
+    
+    .header__inner .logo__S {
+        font-size: 40px;
+        margin-right:10px;
+        margin-top:5px;
+        margin-left:16px;
+      }
+      .header__inner .logo__text-L{
+
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        width:110px;
+    }
+    .header__inner .logo__text-S{
+        font-size: 9px;
+        letter-spacing: 1px;
+        width:110px;
+    } */
+}
+
+
+
+
+/* nav
+------------------------------------------------ */
+
+
+
+/* ul
+------------------------------------------------ */
+.header__nav{
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+
+/* li
+------------------------------------------------ */
+
+.header__inner li,
+.footer__inner li{
+    font-family: "Dongle", sans-serif;
+    font-weight: 300; /* 300,400,700*/
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-right: 24px;
+}
+.header__inner li:last-child,
+.footer__inner li:last-child{
+    margin-right: 0;
+}
+
+.header__nav a,
+.footer__nav a{
+transition: 0.3s ease-in-out;
+text-decoration: none;
+}
+
+.header__nav a:hover,
+.footer__nav a:hover{
+    text-decoration: none;
+    /* opacity:.5; */
+    color:#67513D;
+}
+
+

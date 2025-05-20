@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+  html {
+    /* ページ内リンクスライド設定 */
+    scroll-behavior: smooth;
+    @media (prefers-reduced-motion: reduce) {
+      scroll-behavior: auto;
+    }
+  }
+
+  body{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #B7916D;
+    animation: fadein 1.5s forwards;
+    padding-top:140px;
+}
+    body{
+    animation: fadein 1s forwards;
+    }
+
+    @keyframes fadein {
+    0% {opacity: 0}
+    100% {opacity: 1}
+    }
+
+    @media only screen and (max-width: 767px) {
+      body{
+        padding-top:120px;
+      }
+    }
+    @media only screen and (max-width: 599px) {
+      body{
+        padding-top:100px;
+      }
+    }
+
+
+a:link, a:visited, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.circle__color__red{
+  color:#EC2F2F;
+  margin-right:2px;
+}
+.circle__color__blue{
+  color:#5575E6;
+  margin-right:2px;
+}
+.circle__color__yellow{
+  color:#EDF22E;
+  margin-right:2px;
+}
+
+.area-OtherWorks{
+  max-width:920px;
+  margin:0 auto;
+  padding:48px 0 80px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+}

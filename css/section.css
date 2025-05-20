@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* レイアウト 
+------------------------------------------------ */
+
+/* 
+
+PCとTBで変化させるプロパティの要素
+・文字サイズ
+・縦方向の余白 margin-bottom 
+
+*/
+
+
+
+
+
+
+#works {
+    margin-bottom: 120px;
+}
+.works__inner{
+    max-width:920px;
+    /* padding:0 6%; */
+    margin:0 auto;
+    background-color:#ccc;
+}
+@media only screen and (min-width: 767px) {
+    #works {
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (min-width: 961px) {
+    #works {
+        margin-bottom:60px;
+    }
+    .works__inner{
+        width:100%;
+        /* padding:0 20px; */
+        background-color:#ddd;
+    }
+}

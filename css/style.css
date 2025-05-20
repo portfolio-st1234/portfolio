@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+Theme Name: MY PORTFOLIO
+Theme URI: テーマのサイトのURI
+Author: 作者の名前
+Author URI: 作者のサイトのURI
+Description:テーマの説明
+Version: テーマのバージョン
+License: GNU General Public License v2 or later
+License URI: LICENSE
+
+*/
+@import url(./reset.css);
+@import url(./basic-setting.css);
+@import url(./section.css);
+@import url(./header-mb.css);
+@import url(./sp-navi.css);
+@import url(./footer.css);
+@import url(./works-button.css);
+@import url(./list-works.css);
+@import url(./list-other-works.css);
+@import url(./works-column-img.css);
+@import url(./splide-default.min.css);
+@import url(./splide-setting.css);
+@import url(./animate.css);
+@import url(./about.css);
+@import url(./contact.css);

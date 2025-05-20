@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+
+
+
+.outer-box{
+    max-width:100%;
+     overflow: hidden;
+  }
+  
+ /* 画像の登場　zoomOutの設定*/
+@-webkit-keyframes zoomOut{
+    0%{
+    opacity: 0;
+    -webkit-transform: scale3d(1.5,1.5,1.5) ;
+    transform: scale3d(1.5,1.5,1.5) ;
+
+    }
+    100%{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1) ;
+    transform: scale3d(1,1,1) ;
+    }
+ }    
+ @keyframes zoomOut{
+    0%{
+    opacity: 0;
+    -webkit-transform: scale3d(1.5,1.5,1.5) ;
+    transform: scale3d(1.5,1.5,1.5) ;
+
+    }
+    100%{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1) ;
+    transform: scale3d(1,1,1) ;
+
+    }
+ }
+ .zoomOut{
+    max-width:100%;
+    -webkit-animation-name:zoomOut; 
+    animation-name:zoomOut; 
+    animation-duration:0.5s;          
+    animation-timing-function:ease-out; 
+    animation-fill-mode:both;
+}  
+/*  END zoomOutの設定*/
+
+
+/* fadeInUpの設定 */
+
+@-webkit-keyframes fadeInUp {
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 20px, 0);
+transform: translate3d(0, 20px, 0);
+}
+
+to {
+opacity: 1;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes fadeInUp {
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 20px, 0);
+transform: translate3d(0, 20px, 0);
+    /* origninal
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+    */
+}
+
+to {
+opacity: 1;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+}
+
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp;   
+animation-timing-function:ease-out; 
+animation-fill-mode:both;
+}
+
+
+
+/* END fadeInUpの設定 */
+
+
+/*アニメーションの設定の解説*/
+/*
+animation-name:zoomOut;   
+ アニメーションの名前
+
+animation-timing-function:ease-out;    
+イージング　
+ease 開始時と終了時の動きをなめらかにする
+ease-in	開始時だけなめらかにする
+ease-out	終了時だけなめらかにする
+
+animation-iteration-count:1;
+実行される回数　
+1 （初期値）
+infinite ループ
+
+animation-direction:normal;
+実行される方向　normal（順方向に再生）
+
+animation-fill-mode:both;
+実行の前後にどのようにスタイルが適用されるか　
+none スタイルを指定しない
+forwards アニメーションの終了後には最後のキーフレームのスタイルを適用する
+both キーフレームの最初と最後を適用
+
+以下はwow.jsをしようする場合はhtml内に属性で直接設定するのでここでは意味がないけど設定する
+
+animation-duration:0.5s;           
+時間　単位　秒　0s
+
+animation-delay:0s;
+ディレイ　単位　秒　0s
+
+/*END アニメーションの設定の解説*/
+
+ /*  END 画像の登場　zoomOutの設定*/
+
+
+ 
+ /*
+ webkitブラウザへの対応
+
+
+ 1.class名の前に「-webkit-」
+ 　今回の対象：transformとanimation-name
+
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+
+
+2.class名に 「-webkit-」をつけたものを複製して配置
+  @keyframes zoomOut
+ @-webkit-keyframes zoomOut
+
+ @-webkit-keyframes zoomOut {
+    from {
+    opacity: 1;
+    }
+    
+    50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+    }
+    
+    to {
+    opacity: 0;
+    }
+ */

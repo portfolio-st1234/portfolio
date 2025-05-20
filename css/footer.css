@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+footer{
+    margin-top:80px;
+}
+.footer__inner{
+    width:920px;
+    box-sizing: border-box;
+    padding:10px 5%;
+    margin:0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* align-self:flex-start; */
+    align-items:center;
+}
+
+@media only screen and (max-width: 599px) {
+    .footer__inner{
+        width:100%;
+    }
+}
+
+
+.footer__layout-top,
+.footer__layout-middle,
+.footer__layout-bottom{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.footer__layout-middle{
+    background-color: rgba(0, 0, 0, 0.08);
+    height:56px;
+    padding-top:4px;
+}
+.footer__layout-bottom{
+    background-color: rgba(0, 0, 0, 0.16);
+    height:25px;
+    padding-top:4px;
+    color:#E4E4E4;
+}
+@media only screen and (max-width: 599px) {
+    .footer__layout-middle{
+        height:auto;
+        padding:16px 0;
+    }
+}
+
+
+
+/* nav
+------------------------------------------------ */
+
+
+.footer__nav, .footer__list-sns{
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+
+/* ul
+------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* li
+------------------------------------------------ */
+
+
+
+
+
+.footer__list-sns li {
+    margin-right: 24px;
+    width:20px;
+}
+.footer__list-sns li.sns-x {
+    width:18px;
+}
+.footer__list-sns li.sns-line {
+    width:22px;
+}
+.footer__list-sns a {
+    transition: 0.3s ease-in-out;
+}
+
+.footer__list-sns a:hover {
+    text-decoration: none;
+    opacity:.5;
+}
+
+.footer__nav li:last-child, .footer__list-sns li:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 599px) {
+
+    .footer__layout-middle .footer__inner{
+        flex-direction:column-reverse;
+    }
+
+    .footer__nav li {
+        margin-right: 16px;
+    }
+    .footer__list-sns li {
+        margin-right: 24px;
+        width:20px;
+    }
+    .footer__nav li:last-child, .footer__list-sns li:last-child {
+        margin-right: 0;
+    }
+    
+}
+
+/* img
+------------------------------------------------ */
+.footer__list-sns img{
+    width:100%;
+}
+
+
+
+/* copyright 
+------------------------------------------------ */
+
+.copyright{
+    /* font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align:center;
+    padding-bottom:5px;
+}
